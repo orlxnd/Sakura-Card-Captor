@@ -1,5 +1,7 @@
 PROYECTO I - HDP <br>
-<img src="./Imagenes Sakura/Logo Sakura.png"  alt="Logo" style = " width:200px ; heigth:200px;"/> 
+<div>
+ <img src="./Imagenes Sakura/Logo Sakura.png"  alt="Logo" style = " width:200px ; heigth:200px;"/> 
+</div>
 <br>
 
 # Sakura-Card-Captor
@@ -15,12 +17,6 @@ Esta serie te atrapa y cautiva con sus represetaciones de poderes magicos unicos
 Nuestro proyecto estara basado en la tematica de esta serie, la estetica y el diseño reflejaria el  mundo magico y encantador de Sakura, con colores suaves y pasteles y una disposicion elegante y fluida. El diseño podria incluir secciones dedicadas a los personajes principales, la trama de la historia, galeria de imagenes. Cada seccion estara diseñada para destacar la informacion y cautivar a los visitantes.
 
 Desde que nuestros usuarios ingresen a la libreria seran transportados a un mundo lleno de color, fantasia y aventura. Esta tematica te atraera desde su diseño encantador hasta su funcionalidad, se invita a los usuarios a sumergirse en el mundo magico y emocionante de "Sakura Card Captor".
-
-# Creadores.
-Melida Fuentes Miranda <br>
-Carlos Orlando Hernandez del Cid<br>
-Alexander Antolino Retana Medina<br>
-Diana Estefani Espinal Carcamo<br>
 
 # Tabla de contenidos.
  -Botones. <br>
@@ -71,8 +67,3 @@ Diana Estefani Espinal Carcamo<br>
       ```
    3. Hola mundo! Abra la página en su navegador de su elección para ver su página con Sakura Card Captor CSS. Ahora puedes comenzar a construir con Sakura Card Captor Library tu propio diseño, agregando docenas de componentes, y utilizando nuestros ejemplos oficiales.
       
- # Qué incluye.
- # Documentación.
- # Versión.
- # Ejecutar documentación localmente.
- # 
