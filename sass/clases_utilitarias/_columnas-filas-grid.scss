@@ -1,0 +1,18 @@
+@mixin col($col){
+    grid-template-columns: $col;
+}
+@mixin row($row){
+    grid-template-rows: $row;
+}
+@mixin espaciado($col,$row){
+    column-gap: $col;
+    row-gap: $row;
+}
+@mixin area-col($inicio,$final){
+    grid-column-start: $inicio;
+    grid-column-end: $final;
+}
+@mixin area-row($inicio,$final){
+    grid-row-start: $inicio;
+    grid-row-end: $final;
+}

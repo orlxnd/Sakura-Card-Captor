@@ -1,0 +1,23 @@
+body {
+  cursor: url("Imagenes Sakura/Varita-mouse.png"), auto;
+}
+body * {
+  cursor: inherit;
+}
+
+.navbar-vertical {
+  height: 100%;
+  overflow-y: auto;
+}
+.navbar-vertical::-webkit-scrollbar {
+  width: 8px;
+}
+.navbar-vertical::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+.navbar-vertical::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=_funcionalidades.css.map */

@@ -1,0 +1,32 @@
+// Importar archivos desde la carpeta clases_utilitarias
+
+@use 'clases_utilitarias/breakpoints';
+@use 'clases_utilitarias/colores';
+@use 'clases_utilitarias/columnas-filas-grid';
+@use 'clases_utilitarias/fondos';
+@use 'clases_utilitarias/fuentes';
+@use 'clases_utilitarias/margin-padding-border';
+@use 'clases_utilitarias/movimiento-elemntos';
+@use 'clases_utilitarias/mover-elements';
+@use 'clases_utilitarias/ocultar';
+@use 'clases_utilitarias/redondear';
+@use 'clases_utilitarias/size';
+@use 'clases_utilitarias/sombras';
+@use 'clases_utilitarias/textos';
+@use 'clases_utilitarias/columns';
+
+// Importar archivos desde la carpeta componentes
+
+@use 'componentes/alertas';
+@use 'componentes/badges';
+@use 'componentes/barra-navegacion';
+@use 'componentes/botones';
+@use 'componentes/cards';
+@use 'componentes/contenedores';
+@use 'componentes/formularios';
+@use 'componentes/grid';
+@use 'componentes/layout';
+@use 'componentes/sidebar';
+
+// Importar archivos desde la carpeta funcionalidades
+@use 'funcionalidades/funcionalidades';

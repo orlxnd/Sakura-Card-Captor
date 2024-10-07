@@ -1,0 +1,111 @@
+//contenedores
+
+@use '../clases_utilitarias/breakpoints';
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/fuentes';
+@use '../clases_utilitarias/margin-padding-border';
+@use '../clases_utilitarias/size';
+@use '../clases_utilitarias/textos';
+
+
+
+.container-sm{
+  @include margin-padding-border.margin(0);
+  @include margin-padding-border.padding(0);
+  @include margin-padding-border.border(0);
+  margin-left: 150px;
+}
+.container-md{
+  @include margin-padding-border.margin(0);
+  @include margin-padding-border.padding(10px);
+  @include margin-padding-border.border(0);
+  background-color: colores.$color-libro-Sakura4; 
+  @extend .p1; 
+}
+.container-lg{
+  @include margin-padding-border.margin(0);
+  @include margin-padding-border.padding(0);
+  @include margin-padding-border.border(0);
+  background-color: colores.$color-libro-Sakura3; 
+  @extend .p1; 
+}
+.container-xl{
+  @include margin-padding-border.margin(0);
+  @include margin-padding-border.padding(0);
+  @include margin-padding-border.border(0);;
+  background-color: colores.$color-libro-Sakura1; 
+  @extend .p1; 
+}
+.container-xxl{
+  @include margin-padding-border.margin(0);
+  @include margin-padding-border.padding(0);
+  @include margin-padding-border.border(0); 
+  @extend .p1; 
+}
+.container-fluid{
+  @include margin-padding-border.margin(0);
+  @include margin-padding-border.padding(0);
+  @include margin-padding-border.border(0);
+  @extend .p3; 
+}
+
+//Breakpoints llamdas por la funcion
+@include breakpoints.breakpoints_min(fluid){
+  .container{@include size.size(100%,auto);}
+  .container-sm{@include size.size(100%,auto);}
+  .container-md{@include size.size(100%,auto);}
+  .container-lg{@include size.size(100%,auto);}
+  .container-xl{@include size.size(100%,auto);}
+  .container-xxl{@include size.size(100%,auto);}
+  .container-fluid{@include size.size(100%,auto);}
+}
+
+@include breakpoints.breakpoints_max(sm){
+  .container{@include size.size(540px, auto);}
+  .container-sm{@include size.size(540px, auto);}
+  .container-md{@include size.size(100%, auto);}
+  .container-lg{@include size.size(100%, auto);}
+  .container-xl{ @include size.size(100%, auto);}
+  .container-xxl{@include size.size(100%, auto);}
+  .container-fluid{@include size.size(100%, auto);}
+}
+
+@include breakpoints.breakpoints_min(md){
+  .container{@include size.size(720px, auto);}
+  .container-sm{@include size.size(720px, auto);}
+  .container-md{ @include size.size(720px, auto);}
+  .container-lg{ @include size.size(100%, auto);}
+  .container-xl{@include size.size(100%, auto);}
+  .container-xxl{@include size.size(100%, auto);}
+  .container-fluid{@include size.size(100%, auto);}
+}
+
+@include breakpoints.breakpoints_min(lg){
+  .container{@include size.size(960px, auto);}
+  .container-sm{@include size.size(960px, auto);}
+  .container-md{@include size.size(960px, auto);}
+  .container-lg{ @include size.size(960px, auto);}
+  .container-xl{@include size.size(100%, auto);}
+  .container-xxl{ @include size.size(100%, auto);}
+  .container-fluid{@include size.size(100%, auto);}     
+}
+
+@include breakpoints.breakpoints_min(xl){
+  .container{@include size.size(1140px, auto);}
+  .container-sm{@include size.size(1140px, auto);}
+  .container-md{@include size.size(1140px, auto);}
+  .container-lg{ @include size.size(1140px, auto);}
+  .container-xl{@include size.size(1140px, auto);}
+  .container-xxl{@include size.size(100%, auto);}
+  .container-fluid{ @include size.size(100%, auto);}
+}
+
+@include breakpoints.breakpoints_min(xxl){
+  .container{@include size.size(1400px, auto);}
+  .container-sm{ @include size.size(1400px, auto);}
+  .container-md{@include size.size(1400px, auto);}
+  .container-lg{@include size.size(1400px, auto);}
+  .container-xl{@include size.size(1400px, auto);}
+  .container-xxl{@include size.size(1400px, auto);}
+  .container-fluid{@include size.size(100%, auto);} 
+}

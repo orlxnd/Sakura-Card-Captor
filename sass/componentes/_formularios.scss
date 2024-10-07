@@ -1,0 +1,183 @@
+// Importamos los archivos SCSS necesarios
+@use 'contenedores';
+@use 'botones';
+@use 'badges';
+@use '../clases_utilitarias/breakpoints';
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/fuentes';
+@use '../clases_utilitarias/redondear';
+@use '../clases_utilitarias/sombras';
+@use '../clases_utilitarias/textos';
+@import '../clases_utilitarias/colores';
+@import '../clases_utilitarias/fuentes';
+
+// Estilos para el formulario de Registro de Información
+.formulario-registro {
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  // Estilos para los campos de entrada
+  .input-field-registro {
+    margin-bottom: 20px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid colores.$color-libro-Sakura4;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+  }
+
+}
+
+// Estilos para el formulario de Crear Cuenta
+.formulario-crear-cuenta {
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  // Estilos para los campos de entrada
+  .input-field-cuenta {
+    margin-bottom: 20px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid $color-Libro-clow2;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+
+  // Estilos para las etiquetas de formulario
+  .label-formulario-cuenta {
+    font-family: $font-family3;
+    color: $Color-Carta-Sakura-3-hex;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+// Estilos para el formulario de Reserva de Mesa
+.formulario-reserva {
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+  // Estilos para los campos de entrada
+  .input-field-reserva {
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid $color-Libro-clow2;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+
+  // Estilos para las etiquetas de formulario
+  .label-formulario-reserva {
+    font-family: $font-family3;
+    color: $color-Libro-clow3;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.formulario-contacto {
+  @media(max-width:1024px) {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  margin-left: 10px;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: colores.$color_Sakura-dress1;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+
+  // Estilos para los campos de entrada
+  .input-contacto {
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid $color-libro-Sakura4;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+
+
+  // Estilos para las etiquetas de formulario
+  .label-contacto {
+    font-family: $font-family3;
+    color: $color-Libro-clow3;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="icon" href="/Imagenes Sakura/Kero.ico" type="image">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Breakpoints</title>
+</head>
+
+<body>
+    <body>
+    <div class="header">
+        <section id="Inicio">
+            <nav class="nav">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="/index.html" class="enlace">
+                    <img src="/Imagenes Sakura/Logo%20Sakura.png" alt="Logo Sakura" class="logo" />
+                </a>
+                <ul class="lista-desordenada">
+                    <li class="item"><a href="/index.html" class="a">Inicio</a></li>
+                    <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
+                    <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+                    <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git">
+                            <div class="btn btn-icon"><i class="fa-brands fa-square-github fa-3x"
+                                    style="color:#009572;"></i></div>
+                        </a></li>
+                    <li class="item"><a
+                            href="https://youtube.com/playlist?list=PLGpxnliw4VnxbPxV57zvgINmM_0t8V8eo&si=XopHm43TY9qrrcBZ">
+                            <div class="btn btn-icon"><i class="fa-solid fa-film fa-3x" style="color:#009572;"></i>
+                            </div>
+                        </a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    <div class="container -grid fila -col2" style="grid-template-columns: 30% 85%;">
+        <div class="container-nav-vertical">
+            <nav class="navbar-vertical">
+                <input type="checkbox" id="check1" />
+                <label for="check1" class="checkbtn1">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="lista-desordenada1">
+                    <li class="item1">
+                        <p style="color: black;">Componentes</p>
+                    </li>
+                    <li class="item1"><a href="botones.html">
+                            <p>Botones</p>
+                        </a></li>
+                    <li class="item1"><a href="formularios.html">
+                            <p>Formularios</p>
+                        </a></li>
+                    <li class="item1"><a href="Tarjetas.html">
+                            <p>Tarjetas</p>
+                        </a></li>
+                    <li class="item1"><a href="alertas.html">
+                            <p>Alertas</p>
+                        </a></li>
+                    <li class="item1"><a href="navbar.html">
+                            <p>Navbar</p>
+                        </a></li>
+                    <li class="item1"><a href="badges.html">
+                            <p>Badges</p>
+                        </a></li>
+                    <li class="item1">
+                        <p style="color: black;">Layout</p>
+                    </li>
+                    <li class="item1"><a href="breakpoints.html">
+                            <p>Breakpoints</p>
+                    </li>
+                    <li class="item1"><a href="containers.html">
+                            <p>Containers</p>
+                    </li>
+                    <li class="item1"><a href="filas-columnas.html">
+                            <p>Grid</p>
+                    </li>
+                    <li class="item1">
+                        <p style="color: black;">Utilidades</p>
+                    </li>
+                    <li class="item1"><a href="shadow.html">
+                            <p>Shadow</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="margin-padding-border.html">
+                            <p>Padding</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="bordes.html">
+                            <p>Bordes</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="ocultar.html">
+                            <p>Ocultar</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="mover-elements.html">
+                            <p>Mover Elementos</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="background-color.html">
+                            <p>Background</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="colores.html">
+                            <p>Colores</p>
+                        </a>
+                    </li>
+                    <li class="item1"><a href="developers.html">
+                            <p>Developers</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <br>
+            <h1 class="titulo1">Breackpoints</h1>
+            <br>
+            <p class="p3">Los breakpoints, también conocidos como puntos de quiebre, son valores específicos de la
+                anchura de la pantalla que se utilizan en diseño web responsive para adaptar el diseño de una página web
+                a diferentes tamaños de pantalla.
+            </p>
+            <br>
+            <p class="p3">
+                En un diseño responsivo, los breakpoints se utilizan para cambiar el diseño de la página, como el tamaño
+                y posición de los elementos, la distribución de las columnas, y la visibilidad u ocultamiento de ciertos
+                elementos, según el tamaño de la pantalla del dispositivo en el que se está visualizando la página.
+            </p>
+            <br>
+            <div class="container-fluid ">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Breakpoint</th>
+                            <th>Class</th>
+                            <th>Dimensiones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Breakpoint">X-Small</td>
+                            <td data-label="Class">None</td>
+                            <td data-label="Dimensiones"><i rel="code">&lt;</i>576px</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Breackpoint">Small</td>
+                            <td data-label="Class">sm</td>
+                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=576px</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Breakpoint">Medium</td>
+                            <td data-label="class">md</td>
+                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=768px</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Breackpoint">Large</td>
+                            <td data-label="Class">lg</td>
+                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=992px</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Breackpoint">Extra large</td>
+                            <td data-label="Class">xl</td>
+                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=1200</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Breackpoint">Extra extra large</td>
+                            <td data-label="Class">xxl</td>
+                            <td data-label="Dimensiones"><i rel="code">&gt;</i>=1400px</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="footer">
+        <img class="logo_footer" src="/Imagenes Sakura/Logo%20Sakura.png" alt="">
+        <div class="Todo">
+            <h1 class="titulo4">Developers</h1>
+            <p class="p3-1">Fuentes Melida Miranda</p>
+            <p class="p3-1">Espinal Carcamo Diana Estefani</p>
+            <p class="p3-1">Retana Medina Alexander Antolino</p>
+            <p class="p3-1">Hernández Del Cid Carlos Orlando</p>
+        </div>
+    </div> 
+    <script>document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });</script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+@import "../clases_utilitarias/fuentes";
+@import "../clases_utilitarias/colores";
+@import "../clases_utilitarias/sombras";
+
+
+// Colores
+$card-border-color: $color-libro-Sakura2; 
+$card-cap-bg: $color_Sakura-dress1; 
+$primary: $color-libro-Sakura1; 
+$secondary: $color-Carta-Clow1; 
+$white: $color-Carta-Clow5; 
+
+// Espaciados
+$card-spacer-x: 1.25rem;
+$card-spacer-y: 0.75rem; 
+$card-title-spacer-y: 0.75rem; 
+$list-group-item-padding-y: 0.75rem; 
+$list-group-item-padding-x: 1.25rem; 
+
+// Tipografía
+$card-title-font-size:$medium; 
+$card-title-font-weight: 500; 
+
+// Enlaces
+$card-link-color: $color_Sakura-ayes;
+$card-link-decoration: none; 
+$card-link-hover-color: $color-libro-Sakura1; 
+$card-link-hover-decoration: underline; 
+
+// Bordes
+$card-border-radius: 0.25rem;
+$card-border-width: 1px; 
+
+// Variables
+$black: $color-menu;
+$white: $color-Carta-Clow5;
+$primary:  $color-libro-Sakura1;
+$secondary: $color-Carta-Clow1;
+$spacer: 1rem;
+$border-radius: 0.25rem;
+$border-width: 1px;
+
+// Variables de la card
+$card-spacer-x: $spacer;
+$card-spacer-y: $spacer * 0.75;
+$card-border-color: $color-libro-Sakura2;
+$card-border-radius: $border-radius;
+$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}); 
+$card-cap-bg:$color-libro-Sakura1;
+$card-bg: $color-Carta-Clow5;
+$card-height: null;
+
+
+// Tipografía
+$font-family-base: $font-family3;
+
+// Estilos base de la card
+.card {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: $card-height;
+    word-wrap: break-word;
+    background-color: $card-bg;
+    background-clip: border-box;
+    border: $card-border-width solid $card-border-color;
+    border-radius: $card-border-radius;
+    font-family: $font-family-base;
+    text-align: $text-align-center;
+
+    > hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    > .list-group {
+        border-top: inherit;
+        border-bottom: inherit;
+
+        &:first-child {
+            border-top-width: 0;
+            border-top-left-radius: $card-inner-border-radius;
+            border-top-right-radius: $card-inner-border-radius;
+        }
+
+        &:last-child {
+            border-bottom-width: 0;
+            border-bottom-right-radius: $card-inner-border-radius;
+            border-bottom-left-radius: $card-inner-border-radius;
+        }
+    }
+}
+
+// Estilos personalizados de las cards
+.card-1 {
+    .card-header {
+        background-color: $card-cap-bg;
+        border-bottom: 1px solid $card-border-color;
+        padding: $card-spacer-y $card-spacer-x;
+        font-size: $card-title-font-size;
+        font-weight:$font-weight2;
+    }
+
+    .card-body {
+        padding: $card-spacer-y $card-spacer-x;
+    }
+
+    .card-title {
+        font-size: $card-title-font-size;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        margin-bottom: $card-spacer-y;
+    }
+
+    .card-link {
+        color: $primary;
+        text-decoration: none;
+
+        &:hover {
+            color: darken($primary, 10%);
+            text-decoration: underline;
+        }
+    }
+
+    .card-footer {
+        background-color: $card-cap-bg;
+        border-top: 1px solid $card-border-color;
+        padding: $card-spacer-y $card-spacer-x;
+    }
+}
+
+.card-2 {
+    @extend .card-1;
+
+    .list-group {
+        border-radius: 1px;
+
+        .list-group-item {
+            border-left: 0;
+            border-right: 0;
+            padding: $card-spacer-y $card-spacer-x;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.card-3 {
+    @extend .card-1;
+
+    .card-img-top {
+        border-top-left-radius: $card-inner-border-radius;
+        border-top-right-radius: $card-inner-border-radius;
+    }
+
+    .card-img-bottom {
+        border-bottom-left-radius: $card-inner-border-radius;
+        border-bottom-right-radius: $card-inner-border-radius;
+    }
+}
+
+.card-4 {
+    @extend .card-1;
+
+    .card-header {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .card-footer {
+        background-color: $secondary;
+        color: $white;
+    }
+}

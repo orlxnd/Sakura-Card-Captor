@@ -1,0 +1,17 @@
+@use 'colores';
+@use '../clases_utilitarias/redondear' as *;
+.hide {
+        display: none;
+}
+
+.bg-color{
+    @each $color_Sakura-ayes in colores.$color_Sakura-ayes {
+        background-color: $color_Sakura-ayes;
+    }
+}
+
+.bg-other {
+    @each $color-libro-Sakura3 in colores.$color-libro-Sakura3 {
+        background-color:$color-libro-Sakura3;
+    }
+}

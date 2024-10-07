@@ -1,0 +1,39 @@
+// Breakpoints para Mobile, tablets y PC
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-pc: 992px;
+
+$breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin breakpoints_min($parametro){
+  @media screen and (min-width: map-get($breakpoints,$parametro)) {
+      @content;
+  }
+}
+@mixin breakpoints_max($parametro){
+  @media screen and (max-width: map-get($breakpoints,$parametro)) {
+      @content;
+  }
+}
+
+.container {
+  width: 80%; 
+  margin: 0 auto;
+
+  // Media query para pantalla de tablet
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 90%;
+  }
+
+  // Media query para pantalla de móvil
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%; 
+  }
+}

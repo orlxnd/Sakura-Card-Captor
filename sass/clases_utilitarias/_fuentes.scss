@@ -1,0 +1,25 @@
+// Importar fuentes externas
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://db.onlinewebfonts.com/c/6dc5bab84deea2a328685156d3016b19?family=times+new+vespasian);
+
+// Tipo de letras
+$font-family1: "Times New Vespasian";
+$font-family2: "Montserrat";
+$font-family3: 'Noto Sans';
+
+//Tamaño de letras
+$big: 60px;
+$medium: 35px;
+$small:20px;
+$smaller: 10px;
+
+//Grosor de letra
+$font-weight1:bolder;
+$font-weight2:bold;
+$font-weight3:lighter;
+
+// Alineación de texto
+$text-align-justify: justify;
+$text-align-left: left;
+$text-align-center: center;
+$text-align-right: right

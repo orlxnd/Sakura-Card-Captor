@@ -1,0 +1,56 @@
+@use "sass/clases_utilitarias/colores";
+
+// Estilo para hacer que la imagen sea responsive
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Estilos para figuras y leyendas
+.figure {
+    display: inline-block;
+
+    &-img {
+        margin-bottom: 0.5rem;
+        line-height: 1;
+    }
+
+    &-caption {
+        font-size: 0.875rem;
+        color: #6c757d;
+    }
+}
+
+// Estilos para thumbnails
+.KeroSmall {
+    display: block !important;
+    padding: 0.25rem;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+// Estilo para imágenes redondeadas
+.rounded {
+    border-radius: 0.25rem;
+
+    &-circle {
+        border-radius: 50%;
+    }
+}
+
+// Estilos para alinear imágenes
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}

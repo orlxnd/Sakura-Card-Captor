@@ -1,0 +1,80 @@
+//Colores Sakura
+$color_Sakura-dress1: #F2AEC7;
+$color_Sakura-ayes: #009572;
+$color_Sakura-dress2:#D17C9B;
+$color_Sakura-hair: #A1774F;
+$color_Sakura-Wand: #FFC366;
+
+//Libro Sakura
+$color-libro-Sakura1: #F21B7F;
+$color-libro-Sakura2: #F280BF;
+$color-libro-Sakura3: #F2BA52;
+$color-libro-Sakura4: #F2AF5C;
+$color-libro-Sakura5: #D90404;
+
+// libro Clow
+$color-Libro-clow1: #D9B811;
+$color-Libro-clow2: #BF9004;
+$color-Libro-clow3: #734B02;
+$color-Libro-clow4: #8C1B11;
+$color-Libro-clow5: #BF1B1B;
+
+//Carta Sakura
+$Color-Carta-Sakura-1-hex: #F2A0CD;
+$Color-Carta-Sakura-2-hex: #F2C9E0;
+$Color-Carta-Sakura-3-hex: #F0F2AC;
+$Color-Carta-Sakura-4-hex: #F2CF63;
+$Color-Carta-Sakura-5-hex: #F2B28D;
+
+// Carta clow
+$color-Carta-Clow1: #A66589;
+$color-Carta-Clow2: #F2B705;
+$color-Carta-Clow3: #F2CEA2;
+$color-Carta-Clow4: #F28A2E;
+$color-Carta-Clow5: #F2F2F2;
+
+$color-texto-destacado: #333;
+$color-menu: rgba(0, 0, 0, 0.7);
+
+// Colores de fondo
+.bg-sakura-dress1 {
+    background-color: $color_Sakura-dress1; // #F2AEC7
+}
+
+.bg-libro-sakura1 {
+    background-color: $color-libro-Sakura1; // #F21B7F
+}
+
+.bg-carta-sakura-1 {
+    background-color: $Color-Carta-Sakura-1-hex; // #F2A0CD
+}
+
+.bg-carta-clow1 {
+    background-color: $color-Carta-Clow1; // #A66589
+}
+
+.bg-carta-clow5 {
+    background-color: $color-Carta-Clow5; // #F2F2F2
+}
+
+// Colores de texto
+.text-sakura-dress1 {
+    color: $color_Sakura-dress1; // #F2AEC7
+}
+
+.text-libro-sakura1 {
+    color: $color-libro-Sakura1; // #F21B7F
+}
+
+.text-carta-sakura-1 {
+    color: $Color-Carta-Sakura-1-hex; // #F2A0CD
+}
+
+.text-carta-clow1 {
+    color: $color-Carta-Clow1; // #A66589
+}
+
+.text-carta-clow5 {
+    color: $color-Carta-Clow5; // #F2F2F2
+}
+

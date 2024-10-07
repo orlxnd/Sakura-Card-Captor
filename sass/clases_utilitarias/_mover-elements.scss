@@ -1,0 +1,49 @@
+// Unidad base de espaciado
+$Cardcaptor: 1rem;
+
+$Card-sizes: (
+        Sakura: 0,
+        Keroberos: $Cardcaptor * 0.25,
+        Tomoyo: $Cardcaptor * 0.5,
+        Shaoran: $Cardcaptor,
+        Yue: $Cardcaptor * 1.5,
+        Clow: $Cardcaptor * 3
+);
+
+// Mixin para crear utilidades CSS
+@mixin create-utilities($property, $prefix, $values) {
+  @each $name, $size in $values {
+    .#{$prefix}-#{$name} {
+      #{$property}: $size !important;
+    }
+  }
+}
+
+
+@include create-utilities('margin', 'm', $Card-sizes);
+@include create-utilities('margin-top', 'mt', $Card-sizes);
+@include create-utilities('margin-right', 'mr', $Card-sizes);
+@include create-utilities('margin-bottom', 'mb', $Card-sizes);
+@include create-utilities('margin-left', 'ml', $Card-sizes);
+
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+// Crear utilidades de relleno (padding)
+@include create-utilities('padding', 'p', $Card-sizes);
+@include create-utilities('padding-top', 'pt', $Card-sizes);
+@include create-utilities('padding-right', 'pr', $Card-sizes);
+@include create-utilities('padding-bottom', 'pb', $Card-sizes);
+@include create-utilities('padding-left', 'pl', $Card-sizes);
+
+
+.position-wind { position: static !important; }
+.position-jump { position: relative !important; }
+.position-fly { position: absolute !important; }
+.position-earthy { position: fixed !important; }
+.position-sticky { position: sticky !important; }
+
+

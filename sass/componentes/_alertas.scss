@@ -1,0 +1,59 @@
+@use '../clases_utilitarias/colores' as *;
+@use '../clases_utilitarias/breakpoints';
+
+@font-face {
+    font-family: Noto Sans;
+    src:  url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+};
+
+@mixin alert($color, $border-radius: 0.25rem) {
+  background-color: lighten($color, 45%);
+  border: 1px solid $color;
+  color: darken($color, 15%);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: $border-radius;
+}
+
+// Estilos de las alertas
+.alert {
+  @include breakpoints.breakpoints_max(sm) {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  &-simple {
+    @include alert($color_Sakura-dress1);
+  }
+
+  &-creative {
+    @include alert($color-libro-Sakura3, 1rem);
+    background-image: linear-gradient(45deg, lighten($color-libro-Sakura3, 20%), lighten($color-libro-Sakura3, 30%));
+    box-shadow: 0 4px 8px rgba($color-libro-Sakura3, 0.2);
+  }
+
+  &-icon {
+    @include alert($color-Libro-clow1);
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: "\f071";
+      font-family: "Noto Sans 5 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: darken($color-Libro-clow1, 15%);
+    }
+  }
+
+  &-formal {
+    @include alert($color-Carta-Clow1);
+    border-left: 5px solid $color-Carta-Clow1;
+    padding-left: 20px;
+    font-family: Noto Sans;
+    font-style: italic;
+  }
+}

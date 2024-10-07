@@ -1,0 +1,102 @@
+// Variables de breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Filas
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+// Contenedores
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    // Breakpoints para contenedores
+    @media (min-width: $breakpoint-sm) {
+        max-width: 540px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        max-width: 720px;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        max-width: 960px;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        max-width: 1140px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Columnas sin breakpoint
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex: 0 0 calc(100% / 12 * #{$i});
+        max-width: calc(100% / 12 * #{$i});
+    }
+}
+
+@media (min-width: $breakpoint-sm) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            flex: 0 0 calc(100% / 12 * #{$i});
+            max-width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            flex: 0 0 calc(100% / 12 * #{$i});
+            max-width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            flex: 0 0 calc(100% / 12 * #{$i});
+            max-width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl) {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            flex: 0 0 calc(100% / 12 * #{$i});
+            max-width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+.text-center {
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}

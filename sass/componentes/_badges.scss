@@ -1,0 +1,102 @@
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/sombras';
+@use '../clases_utilitarias/redondear';
+@use '../clases_utilitarias/textos';
+@use '../clases_utilitarias/breakpoints';
+
+// Estilo 1: Badge con fondo de color Sakura y texto blanco
+
+.badge-style1 {
+    padding: 2px 5px;
+}
+
+.badge-style1-1 {
+    padding: 2px 5px;
+}
+
+.badge-style1-2 {
+    padding: 2px 5px;
+}
+
+.badge-style1-3 {
+    padding: 2px 5px;
+}
+
+.badge-style1-4 {
+    padding: 2px 5px;
+}
+
+// Estilo 2: Badge con borde y texto de color Clow
+.badge-style2 {   
+   padding: 2px 5px;
+}
+
+.badge-style2-1 {  
+    padding: 2px 5px;
+}
+
+.badge-style2-2 {   
+    padding: 2px 5px;
+}
+
+.badge-style2-3 {
+    padding: 2px 5px;
+}
+
+.badge-style2-4 {
+    padding: 2px 5px;
+}
+
+
+// Estilo 3: Badge con fondo degradado y texto blanco
+
+.badge-style3 {
+    color: white;
+    padding: 2px 5px;
+}
+
+.badge-style3-1 {
+    color: white;
+    padding: 2px 5px;
+}
+
+.badge-style3-2 {
+    color: white;
+    padding: 2px 5px;
+}
+
+.badge-style3-3 {
+    color: white;
+    padding: 2px 5px;
+}
+
+.badge-style3-4 {
+    color: white;
+    padding: 2px 5px;
+}
+
+// Estilo 4: Badge redondeado con sombra tipo 2
+.badge-style4 {
+    color: colores.$color-texto-destacado;
+    padding: 2px 5px;
+}
+
+.badge-style4-1 {
+    color: colores.$color-texto-destacado;
+    padding: 2px 5px;
+}
+
+.badge-style4-2 {
+    color: colores.$color-texto-destacado;
+    padding: 2px 5px;
+}
+
+.badge-style4-3 {
+    color: colores.$color-texto-destacado;
+    padding: 2px 5px;
+}
+
+.badge-style4-4{
+    color: colores.$color-texto-destacado;
+    padding: 2px 5px;
+}
