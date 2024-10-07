@@ -1,0 +1,80 @@
+@use '../clases_utilitarias/columnas-filas-grid';
+@import '../clases_utilitarias/breakpoints';
+
+//Clase convierte un contenedor a un grid
+.-grid {
+  display: grid;
+}
+
+//Clases definidas con columnas para contenedores de tipo grid
+.-col1 {
+  @include columnas-filas-grid.col(1fr);
+}
+
+.-col2 {
+  @include columnas-filas-grid.col(1fr 1fr);
+}
+
+.-col3 {
+  @include columnas-filas-grid.col(1fr 1fr 1fr);
+}
+
+.-col4 {
+  @include columnas-filas-grid.col(1fr 1fr 1fr 1fr);
+}
+
+//Clases definidas con columnas para contenedores de tipo grid
+.-row1 {
+  @include columnas-filas-grid.row(1fr);
+}
+
+.-row2 {
+  @include columnas-filas-grid.row(1fr 1fr);
+}
+
+.-row3 {
+  @include columnas-filas-grid.row(80px auto 80px);
+}
+
+.-row4 {
+  @include columnas-filas-grid.row(auto auto auto auto);
+}
+
+.columna {
+  grid-template-columns: 1fr;
+}
+
+.fila {
+  grid-template-rows: 1fr;
+}
+
+// Responsive Grid
+@include breakpoints_min(sm) {
+  .-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include breakpoints_min(md) {
+  .-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include breakpoints_min(lg) {
+  .-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@include breakpoints_max(xl) {
+  .-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@include breakpoints_max(xxl) {
+  .-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

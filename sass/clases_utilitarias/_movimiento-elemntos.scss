@@ -1,0 +1,28 @@
+//Funciones de posionamiento de elementos
+
+//Funcion position con las propiedades fixed, relative, absolute
+@mixin position($propiedad, $top,$left,$right,$boton){
+    position: $propiedad;
+    top: $top;
+    left: $left;
+    right:$right;
+    bottom: $boton;  
+}
+
+//Funcion para alinear elementos
+@mixin alineacion($align-items,$align-self,$align-content){
+    align-items:$align-items;
+    align-self: $align-self;
+    align-content:$align-content;
+}
+
+//Funcion para alinear elementos
+@mixin justificar($justify-content,$justify-items, $justify-self){
+    justify-content: $justify-content;
+    justify-items: $justify-items;
+    justify-self: $justify-self;
+}
+
+@mixin movimiento($move){
+    float:$move;
+}

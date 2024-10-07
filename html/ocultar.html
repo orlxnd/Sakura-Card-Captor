@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="icon" href="/Imagenes Sakura/Kero.ico" type="image">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ocultar</title>
+</head>
+<style>
+    body {
+        cursor: url("/Imagenes Sakura/Varita-mouse.png"), auto;
+    }
+</style>
+<body>
+    <div class="header">
+        <section id="Inicio">
+            <nav class="nav">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="/index.html" class="enlace">
+                    <img src="/Imagenes Sakura/Logo%20Sakura.png" alt="Logo Sakura" class="logo" />
+                </a>
+                <ul class="lista-desordenada">
+                    <li class="item"><a href="/index.html" class="a">Inicio</a></li>
+                    <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
+                    <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+                    <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git">
+                            <div class="btn btn-icon"><i class="fa-brands fa-square-github fa-3x"
+                                    style="color:#009572;"></i></div>
+                        </a></li>
+                    <li class="item"><a
+                            href="https://youtube.com/playlist?list=PLGpxnliw4VnxbPxV57zvgINmM_0t8V8eo&si=XopHm43TY9qrrcBZ">
+                            <div class="btn btn-icon"><i class="fa-solid fa-film fa-3x" style="color:#009572;"></i>
+                            </div>
+                        </a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    <div class="container -grid fila -col2" style="grid-template-columns: 25% 90%;">
+        <div class="container-nav-vertical">
+            <nav class="navbar-vertical">
+                <input type="checkbox" id="check1" />
+                <label for="check1" class="checkbtn1">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="lista-desordenada1">
+                    <li class="item1">
+                        <p style="color: black;">Componentes</p>
+                    </li>
+                    <li class="item1"><a href="botones.html">
+                            <p>Botones</p>
+                        </a></li>
+                    <li class="item1"><a href="formularios.html">
+                            <p>Formularios</p>
+                        </a></li>
+                    <li class="item1"><a href="Tarjetas.html">
+                            <p>Tarjetas</p>
+                        </a></li>
+                        <li class="item1"><a href="alertas.html">
+                            <p>Alertas</p>
+                        </a></li>
+                    <li class="item1"><a href="navbar.html">
+                            <p>Navbar</p>
+                        </a></li>
+                    <li class="item1"><a href="badges.html">
+                            <p>Badges</p>
+                        </a></li>
+                    <li class="item1">
+                        <p style="color: black;">Layout</p>
+                    </li>
+                    <li class="item1"><a href="breakpoints.html">
+                            <p>Breakpoints</p>
+                    </li>
+                    <li class="item1"><a href="containers.html">
+                            <p>Containers</p>
+                    </li>
+                    <li class="item1"><a href="filas-columnas.html">
+                        <p>Grid</p>
+                    </li>
+                    <li class="item1">
+                        <p style="color: black;">Utilidades</p>
+                    </li>
+                    <li class="item1"><a href="shadow.html">
+                        <p>Shadow</p></a>
+                    </li>
+                    <li class="item1"><a href="margin-padding-border.html">
+                        <p>Padding</p></a>
+                    </li>
+                    <li class="item1"><a href="bordes.html">
+                        <p>Bordes</p></a>
+                    </li>
+                    <li class="item1"><a href="ocultar.html">
+                        <p>Ocultar</p></a>
+                    </li>
+                    <li class="item1"><a href="mover-elements.html">
+                        <p>Mover Elementos</p></a>
+                    </li>
+                    <li class="item1"><a href="background-color.html">
+                        <p>Background</p></a>
+                    </li>
+                    <li class="item1"><a href="colores.html">
+                        <p>Colores</p></a>
+                    </li>
+                    <li class="item1"><a href="developers.html">
+                        <p>Developers</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <br>
+            <h1 class="titulo1">Ocultar</h1>
+            <br>
+            <p class="p3">
+                Ocultar elementos con la librería 'Sakura Card Captor' es como hacer desaparecer objetos con un toque de magia. 
+                Inspirado en la elegancia y el misterio de Sakura, este efecto de ocultar elementos añade un toque de intriga y 
+                sofisticación a tu interfaz.
+            </p>
+            <br>
+            <div class="container-fluid">
+                <div class="hide bg-color">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <div class="bg-color">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <br>
+                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
+                  <br>
+            </div>
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="hide bg-color"&gt;
+                Este div mantiene un fondo pero está oculto.
+                &lt;/div&gt;
+            </code></pre>
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="hide bg-other">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <div class="bg-other">
+                    Este div mantiene un fondo pero esta oculto.
+                  </div>
+                  <br>
+                  <p class="3">Se imprime el div sin la clase Hide para que se vea su uso</p>
+                  <br>
+
+            </div>
+
+            <div class="container-fluid">
+                <pre class="pre"><code class="code">
+                &lt;div class="hide bg-other"&gt;
+                  Este div mantiene un fondo pero está oculto.
+                &lt;/div&gt;
+                </code></pre>
+              </div>
+
+        </div>
+        <br><br>
+    </div>
+    <script>document.addEventListener('mousemove', function (e) {
+        const trail = document.createElement('div');
+        trail.classList.add('trail');
+        trail.style.left = `${e.clientX - 8}px`;
+        trail.style.top = `${e.clientY - 8}px`;
+        document.body.appendChild(trail);
+
+        setTimeout(function () {
+            trail.remove();
+        }, 1000);
+    });</script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+//Funciones para agregar margin padding y border
+@mixin padding($padding){
+    padding: $padding;
+}
+@mixin margin($margin){
+    margin: $margin;
+}
+@mixin border($border){
+    border: $border;
+}

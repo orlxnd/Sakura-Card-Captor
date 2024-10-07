@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/|css/reset.css">
+    <link rel="icon" href="/Imagenes Sakura/Kero.ico" type="image">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Containers</title>
+</head>
+
+<body>
+    <div class="header">
+        <section id="Inicio">
+            <nav class="nav">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <a href="/index.html" class="enlace">
+                    <img src="/Imagenes Sakura/Logo%20Sakura.png" alt="Logo Sakura" class="logo" />
+                </a>
+                <ul class="lista-desordenada">
+                    <li class="item"><a href="/index.html" class="a">Inicio</a></li>
+                    <li class="item"><a href="introdunccion.html" class="a">Introducción</a></li>
+                    <li class="item"><a href="componentes.html" class="a">Componentes</a></li>
+                    <li class="item"><a href="https://github.com/MirandaFuentes/Sakura-Card-Captor.git">
+                            <div class="btn btn-icon"><i class="fa-brands fa-square-github fa-3x"
+                                    style="color:#009572;"></i></div>
+                        </a></li>
+                    <li class="item"><a
+                            href="https://youtube.com/playlist?list=PLGpxnliw4VnxbPxV57zvgINmM_0t8V8eo&si=XopHm43TY9qrrcBZ">
+                            <div class="btn btn-icon"><i class="fa-solid fa-film fa-3x" style="color:#009572;"></i>
+                            </div>
+                        </a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    
+    <div class="container -grid fila -col2" style="grid-template-columns: 25% 90%;">
+        <div class="container-nav-vertical">
+            <nav class="navbar-vertical">
+                <input type="checkbox" id="check1" />
+                <label for="check1" class="checkbtn1">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="lista-desordenada1">
+                    <li class="item1">
+                        <p style="color: black;">Componentes</p>
+                    </li>
+                    <li class="item1"><a href="botones.html">
+                            <p>Botones</p>
+                        </a></li>
+                    <li class="item1"><a href="formularios.html">
+                            <p>Formularios</p>
+                        </a></li>
+                    <li class="item1"><a href="Tarjetas.html">
+                            <p>Tarjetas</p>
+                        </a></li>
+                        <li class="item1"><a href="alertas.html">
+                            <p>Alertas</p>
+                        </a></li>
+                    <li class="item1"><a href="navbar.html">
+                            <p>Navbar</p>
+                        </a></li>
+                    <li class="item1"><a href="badges.html">
+                            <p>Badges</p>
+                        </a></li>
+                    <li class="item1">
+                        <p style="color: black;">Layout</p>
+                    </li>
+                    <li class="item1"><a href="breakpoints.html">
+                            <p>Breakpoints</p>
+                    </li>
+                    <li class="item1"><a href="containers.html">
+                            <p>Containers</p>
+                    </li>
+                    <li class="item1"><a href="filas-columnas.html">
+                        <p>Grid</p>
+                    </li>
+                    <li class="item1">
+                        <p style="color: black;">Utilidades</p>
+                    </li>
+                    <li class="item1"><a href="shadow.html">
+                        <p>Shadow</p></a>
+                    </li>
+                    <li class="item1"><a href="margin-padding-border.html">
+                        <p>Padding</p></a>
+                    </li>
+                    <li class="item1"><a href="bordes.html">
+                        <p>Bordes</p></a>
+                    </li>
+                    <li class="item1"><a href="ocultar.html">
+                        <p>Ocultar</p></a>
+                    </li>
+                    <li class="item1"><a href="mover-elements.html">
+                        <p>Mover Elementos</p></a>
+                    </li>
+                    <li class="item1"><a href="background-color.html">
+                        <p>Background</p></a>
+                    </li>
+                    <li class="item1"><a href="colores.html">
+                        <p>Colores</p></a>
+                    </li>
+                    <li class="item1"><a href="developers.html">
+                        <p>Developers</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <br>
+            <h1 class="titulo1">Filas y Columnas</h1>
+            <br>
+            <p class="p3">Sakura Card Captor tiene un sistema de filas y columnas mediante containers de tipo grid. Por
+                lo cual nuesta libreria tiene un archivo llamado _columnas-filas-grid.scss donde almacena funciones que
+                ayudan a definir las columnas y filas. Nuestra clase _columnas-filas-grid.scss proporciona sus
+                funciones la clase _grid.scss .
+            </p>
+            <br>
+            <div class="container-fluid">
+                <pre class="pre">
+                  <code class="code">
+                    _columnas-filas-grid.scss
+    
+                    @mixin col($col){
+                      grid-template-columns: $col;
+                    }
+                    @mixin row($row){
+                        grid-template-rows: $row;
+                    }
+                  </code>
+                </pre>
+
+            </div>
+            <br>
+            <br>
+            <p class="p3">Considerando la conexión entre los archivos _columnas-filas-grid.scss y _grid.scss en Sakura
+                Card Captor, encontramos que _grid.scss alberga las clases esenciales para definir columnas y filas.
+                Estas clases, sin embargo, son el resultado de las funciones específicas contenidas en
+                _columnas-filas-grid.scss. Sakura Card Captor ha fijado ciertos límites en cuanto al número máximo y
+                mínimo de columnas y filas permitidas en un diseño: hasta 4 columnas y al menos 1, lo mismo aplicado a
+                las filas. Aunque, estas clases pueden ser ajustadas según las necesidades en sus respectivos archivos.
+                Esto brinda la flexibilidad de modificar las dimensiones tanto de columnas como de filas, ya que la
+                biblioteca establece un tamaño predeterminado de 1fr para cada una.</p>
+            <br>
+
+            <div class="container-fluid">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Clases Columnas</th>
+                            <th>Clases Filas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.-col1</td>
+                            <td>.-row1</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>.-col2</td>
+                            <td>.-row2</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>.-col3</td>
+                            <td>.-row3</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>.-col4</td>
+                            <td>.-row4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <p class="p3">Sakura Card Captor también ha establecido funciones para que un elemento de tipo grid ocupe un
+                área dentro de la cuadrícula. Asi mismo, incluye una función para el espaciado entre filas y columnas. Estas
+                funciones pueden ser modificadas dentro del archivo _columnas-filas-grid.css.
+            </p>
+            <br>
+            <div class="container-fluid">
+                <pre class="pre">
+                <code class="code">
+                  Archivo: _columnas-filas-grid.scss
+    
+                  @mixin espaciado($col,$row){
+                    column-gap: $col;
+                    row-gap: $row;
+                  }
+                  @mixin area-col($inicio,$final){
+                      grid-column-start: $inicio;
+                      grid-column-end: $final;
+                  }
+                  @mixin area-row($inicio,$final){
+                      grid-row-start: $inicio;
+                      grid-row-end: $final;
+                  }
+                </code>
+              </pre>
+            </div>
+            <br>
+            <p class="p3">Para definir un contenedor como grid, en Sakura Card Captor se ha creado una clase llamada -grid,
+                la cual se encuentra en el archivo _grid.scss.</p>
+            <br>
+            <div class="container-fluid">
+                <pre class="pre">
+                  <code class="code">
+                    Archivo _grid.SCSS
+    
+                    .-grid {
+                        display: grid;
+                      }
+                  </code>
+                </pre>
+            </div>
+        </div>
+        
+        <br>
+        <script>document.addEventListener('mousemove', function (e) {
+            const trail = document.createElement('div');
+            trail.classList.add('trail');
+            trail.style.left = `${e.clientX - 8}px`;
+            trail.style.top = `${e.clientY - 8}px`;
+            document.body.appendChild(trail);
+
+            setTimeout(function () {
+                trail.remove();
+            }, 1000);
+        });</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+// Importamos los archivos necesarios
+@use'../clases_utilitarias/margin-padding-border';
+@use'../clases_utilitarias/size';
+@use'../clases_utilitarias/columnas-filas-grid';
+@use'../clases_utilitarias/movimiento-elemntos';
+@use '../clases_utilitarias/sombras' as *;
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/textos';
+@import '../clases_utilitarias/breakpoints';
+@import '../clases_utilitarias/fuentes';
+@import '../clases_utilitarias/redondear';
+
+*{
+  @include margin-padding-border.padding(0);
+  @include margin-padding-border.margin(0);
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.nav{
+  background-color: colores.$color_Sakura-dress1;
+  @include size.size(100%,80px);
+  position: fixed;
+  @extend .shadow-type3;
+}
+
+.enlace{
+  @include movimiento-elemntos.position(absolute,none,none,none,none);
+  @include margin-padding-border.padding(20px 50px);
+}
+
+.logo{
+  @include size.size(none,50px);
+}
+
+.nav{
+  .lista-desordenada{
+    @include movimiento-elemntos.movimiento(right);
+    margin-right: 30px;
+  } 
+}
+
+.nav{  .lista-desordenada{
+    .item{
+      display: inline-block;
+      @include margin-padding-border.margin(0 5px);
+      line-height: 80px;
+    }
+  }
+}
+
+.nav .lista-desordenada .item .a {
+  color: colores.$color_Sakura-ayes;
+  @include margin-padding-border.padding(7px 13px);
+  @extend .rounded-medium;
+  text-transform: uppercase;
+}
+
+.item .active, .item .a:hover{
+  background-color: $color-menu;
+  transition: 0.5s;
+}
+
+.checkbtn{
+  color: colores.$color_Sakura-ayes;
+  @extend .titulo1;
+  @include movimiento-elemntos.movimiento(right);
+  display: none;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+
+  .nav .lista-desordenada .item .a{
+  }
+  
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+
+  .lista-desordenada{
+      @include size.size(100%,100vh);
+      color: colores.$color-libro-Sakura2;
+      background-color: colores.$color-menu;
+      @include movimiento-elemntos.position(fixed,80px,-100%,none,none);
+      text-align: center;
+      transition: all .5s;
+  }
+
+  .nav .lista-desordenada .item{
+      display: block;
+      @include margin-padding-border.margin(50px 0);
+      line-height: 30px;
+  }
+
+  .nav .lista-desordenada .item .a{
+  }
+
+  .a:hover{
+      background: none;
+      color: colores.$color-Libro-clow3;
+      transition: all .5s;
+  }
+
+  #check:checked ~ .lista-desordenada{
+      left:0;
+  }
+}

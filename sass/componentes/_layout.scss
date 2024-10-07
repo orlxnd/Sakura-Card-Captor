@@ -1,0 +1,214 @@
+@use '../clases_utilitarias/columnas-filas-grid';
+@use '../clases_utilitarias/colores';
+@use '../clases_utilitarias/margin-padding-border';
+@use '../clases_utilitarias/movimiento-elemntos';
+@use '../clases_utilitarias/sombras';
+@use '../clases_utilitarias/textos';
+@import'../clases_utilitarias/breakpoints';
+
+//Diseño de 4x4
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido {
+    @include columnas-filas-grid.area-col(1, 2);
+    @include columnas-filas-grid.area-row(2, 3);
+    height: 100%;
+    margin: 1px 20px;
+    padding: 0px 40px;
+    margin-top: 13vh;
+}
+
+.footer {
+    @include columnas-filas-grid.area-col(1, 2);
+    @include columnas-filas-grid.area-row(3, 4);
+    background: colores.$color_Sakura-dress1;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: -30px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.codigo {
+    border-radius: 5px;
+    background-color: colores.$color-Libro-clow5;
+    color: colores.$color-Libro-clow5;
+    width: 100%;
+    height: auto;
+}
+
+.pre {
+    border-radius: 10px;
+    background-color: colores.$color_Sakura-dress1;
+    color: colores.$color-menu;
+    height: auto;
+
+    .code {
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 952px) {
+    .pre {
+        width: 50%;
+    }
+
+    .code {
+        width: 50%;
+        height: auto;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 858px) {
+    .pre {
+        width: 100%;
+        height: auto;
+    }
+
+    .code {
+        width: 100%;
+        height: auto;
+    }
+}
+.container {
+    padding: 0 40px;
+    margin-top: 13vh;
+    width: 100%;
+    margin-left: -40px;
+    height: 87vh;
+
+    @include breakpoints_max(sm) {
+        height: auto; 
+      }
+}
+
+.container-nav-vertical {
+    height: 100%;
+    padding: 0 40px;
+    margin-left: -40px;
+    width: 290px;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    @extend .p2;
+}
+
+.table caption {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.table tbody td:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        border: 0px;
+    }
+    .table caption {
+        font-size: 22px;
+    }
+
+    .table thead {
+        display: none;
+    }
+    .Todo {
+        display: none;
+    }
+
+    .table tr {
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+    }
+
+    .table td {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+
+    .table td:last-child {
+        border-bottom: 0px;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 3px #151c22 solid;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.devFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 30%;
+}
+
+.logo_footer {
+    width: 140px;
+    height: 100px;
+    margin-left: 43%;
+}
+.Todo {
+    margin-left: 20px;
+}

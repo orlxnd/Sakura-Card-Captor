@@ -1,0 +1,104 @@
+// Importamos fuentes y colores
+@use 'margin-padding-border';
+@import 'fuentes';
+@import 'colores';
+
+// Mixin para modificar el texto
+@mixin modificartexto ($color, $size, $font-family, $font-weight, $text-align:left) {
+    color: $color;
+    font-size: $size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    text-align: $text-align;
+}
+
+// Clase para título 1
+.titulo1 {
+    @include modificartexto($Color-Carta-Sakura-4-hex, $big, $font-family3, $font-weight1);
+    padding: 5px;
+}
+
+.titulo2{
+    @include modificartexto($color_Sakura-dress1,$big, $font-family1, $font-weight1);
+    padding: 5px;
+}
+.titulo3{
+    @include modificartexto($color-Libro-clow5, $small, $font-family3, $font-weight3);
+    padding: 5px;
+    
+}
+.titulo4 {
+    @include modificartexto($color_Sakura-hair, $medium, $font-family3, $font-weight2);
+    padding: 5px;
+}
+.titulo5 {
+    @include modificartexto($color_Libro-clow3, $medium, $font-family3, $font-weight2);
+    padding: 5px;
+}
+.titulo6 {
+    @include modificartexto($Color-Carta-Sakura-3-hex, $medium, $font-family3, $font-weight2);
+    padding: 5px;
+}
+.titulo1_1 {
+    @include modificartexto($color-libro-Sakura5, $big, $font-family1, $font-weight3);
+    padding: 5px;
+}
+.titulo1_2 {
+    @include modificartexto($color-libro-Sakura1, $medium, $font-family1, $font-weight1);
+    padding: 5px;
+}
+
+.p1{
+    @include modificartexto($color-libro-Sakura1, $small, $font-family1, $font-weight1, $text-align:$text-align-justify);
+    text-align: justify;
+    padding: 5px;
+}
+
+.p2{
+    @include modificartexto($color-Libro-clow3, 12px, $font-family2, $font-weight2, $text-align:$text-align-justify);
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.p3{
+    @include modificartexto($color-Libro-clow3, $small, $font-family3, none, $text-align:$text-align-justify);
+    text-align: justify;
+    padding: 5px;
+    line-height: 1.5em;
+}
+.p3-1{
+    @include modificartexto($color-Libro-clow3, 9px, $font-family3, $font-weight2, $text-align:$text-align-justify);
+    text-align: justify;
+    padding: 5px;
+}
+.p4{
+    @include modificartexto(white, $small, $font-family1, $font-weight1, $text-align:$text-align-justify);
+    text-align: justify;
+    padding: 5px;
+}
+@media (max-width: 952px){
+    .titulo1{
+        font-size: 70px;
+    }
+    .titulo2{
+        font-size: 60px;
+    }
+    .p3-1{
+        @include modificartexto($color-Libro-clow3, 9px, $font-family3, $font-weight2, $text-align:$text-align-justify);
+        text-align: justify;
+        padding: 5px;
+    }
+}
+@media (max-width: 858px){
+    .titulo1{
+        font-size: 40px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+    .p3-1{
+        @include modificartexto($color-Libro-clow3, 9px, $font-family3, $font-weight2, $text-align:$text-align-justify);
+        text-align: justify;
+        padding: 5px;
+    }
+}

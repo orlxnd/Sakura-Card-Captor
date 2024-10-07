@@ -1,0 +1,24 @@
+// Importamos el archivo de colores
+@import '_colores';
+
+// Clase para sombra tipo 1
+.shadow-type1 {
+  box-shadow: 2px 2px 4px $color_Sakura-dress1;
+}
+
+// Clase para sombra tipo 2
+.shadow-type2 {
+  box-shadow: 4px 4px 8px $color-Carta-Clow4;
+}
+
+// Clase para sombra tipo 3
+.shadow-type3 {
+  box-shadow: 6px 6px 12px $color_Sakura-dress2;
+}
+
+// Clase para sombra tipo 4
+.shadow-type4 {
+  box-shadow: 8px 8px 16px $color_Sakura-hair;
+}
+
+//Clase sombra para textos.

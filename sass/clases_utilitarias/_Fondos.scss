@@ -1,0 +1,78 @@
+@use "colores" ;
+.Fondo-Sakura{
+    background-color: colores.$color_Sakura-dress1;
+}
+.Fondo-Libro-Sakura{
+    background-color: colores.$color-libro-Sakura2;
+}
+.Fondo-Carta-Sakura{
+    background-color: colores.$Color-Carta-Sakura-2-hex;
+}
+.Fondo-Carta-Clow{
+    background-color: colores.$color-Carta-Clow5;
+}
+.Fondo-Clow{
+    background-color: colores.$color-Libro-clow1;
+}
+.Fondo-Badge-Sakura-1{
+    background-color: colores.$color_Sakura-dress1;
+}
+.Fondo-Badge-Sakura-1-1{
+    background-color: colores.$color_Sakura-ayes;
+}
+.Fondo-Badge-Sakura-1-2{
+    background-color: colores.$color_Sakura-dress2;
+}
+.Fondo-Badge-Sakura-1-3{
+    background-color: colores.$color_Sakura-hair;
+}
+.Fondo-Badge-Sakura-1-4{
+    background-color: colores.$color_Sakura-Wand;
+}
+.Fondo-Badge-Sakura-2{
+    border: 2px solid colores.$color-libro-Sakura1;
+}
+.Fondo-Badge-Sakura-2-1{
+    border: 2px solid colores.$color-libro-Sakura2;
+}
+.Fondo-Badge-Sakura-2-2{
+    border: 2px solid colores.$color-libro-Sakura3;
+}
+.Fondo-Badge-Sakura-2-3{
+    border: 2px solid colores.$color-libro-Sakura4;
+}
+.Fondo-Badge-Sakura-2-4{
+    border: 2px solid colores.$color-libro-Sakura5;
+}
+
+.Fondo-Badge-Sakura-3{
+    background: linear-gradient(45deg, colores.$color-Libro-clow1, colores.$color-Carta-Clow1);
+}
+.Fondo-Badge-Sakura-3-1{
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-2-hex, colores.$color-Carta-Clow2);
+}
+.Fondo-Badge-Sakura-3-2{
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-3-hex, colores.$color-Carta-Clow3);
+}
+.Fondo-Badge-Sakura-3-3{
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-4-hex, colores.$color-Carta-Clow4);
+}
+.Fondo-Badge-Sakura-3-4{
+    background: linear-gradient(45deg, colores.$Color-Carta-Sakura-5-hex, colores.$color-Carta-Clow5);
+}
+
+.Fondo-Badge-Sakura-4{
+    background-color: colores.$color-Carta-Clow1;
+}
+.Fondo-Badge-Sakura-4-1{
+    background-color: colores.$color-Carta-Clow2;
+}
+.Fondo-Badge-Sakura-4-2{
+    background-color: colores.$color-Carta-Clow3;
+}
+.Fondo-Badge-Sakura-4-3{
+    background-color: colores.$color-Carta-Clow4;
+}
+.Fondo-Badge-Sakura-4-4{
+    background-color: colores.$color-Carta-Clow5;
+}
